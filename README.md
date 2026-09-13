@@ -95,17 +95,28 @@ Printer compatibility depends on the device and its Windows configuration.
 
 ### Automatic saves and backups
 
-- A portable SQLite database holds the store's records, settings, drawer state, receipts, and attached images.
+- SQLite holds linked sales, inventory, purchasing, settings and drawer records. Receipt documents and attached images live separately under `saves/assets` and are included in complete backup ZIPs.
 - Completed changes save immediately. Editors still use their **Save** buttons.
 - Startup automatically opens the newest valid saved store; a new installation starts its own store.
 - Closing renames the working database to the closing date, preserving existing files if a date name is already taken.
-- Manual backup and restore controls preserve existing saves.
+- Automatic verified backups run every 30 minutes and on close, retaining 12 recent, 30 daily and 30 closing snapshots. Manual and safety backups are retained until removed by the owner.
+- **Settings → Backups & Import** offers manual backup, verified ZIP restore, an optional second backup folder, and folder shortcuts. Restore preserves the previous store and checks file hashes and database integrity before switching.
 - Optional email backup at closing, with local-only close and cancel choices. The local save happens first.
 - Enter a store email and automatically use it as both sender and recipient, or choose a different recipient.
 - SMTP/TLS configuration and email credentials held in Windows Credential Manager. Gmail requires a generated app password; credentials must be configured again on a different computer.
-- Email attachments are ZIP backups of the database, up to 18 MiB compressed. Larger stores can still use local backups.
+- Email attachments are complete ZIP packages of the database and its linked files, up to 18 MiB compressed. Larger stores can use local and second-folder backups.
 
-To move a store, copy its latest database into the new installation's `saves` folder. Keep an additional backup in a separate location.
+To move a store, save its complete ZIP backup and choose **Restore backup** in the new installation. Keep the package together rather than mixing files from different dates. Older self-contained database saves remain supported.
+
+### Inventory transfers
+
+- Export an inventory-only **.posinventory.json** file for another installation.
+- Drop a transfer file into the **imports** folder beside `POS.exe`; the app offers a review when the register is idle. A manual import button is also available in Products and Settings.
+- Searchable, paginated preview of new items, duplicate barcodes and held rows, with stock, price, cost and review reasons.
+- Leading zeroes remain intact. Existing barcodes/SKUs are skipped, and repeating an import does not add stock twice.
+- Complete backup before import; product records and opening stock movements save together. The original source file is preserved.
+- Default inactive import for inspection; optional activation after reviewing tax rates. Uncertain matches and unsupported special pricing are held for review.
+- Inventory transfers do not include sales, drawer sessions, email settings, vendor links or images. Use complete backups to move a full store.
 
 ### Interface and settings
 
