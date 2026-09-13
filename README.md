@@ -17,7 +17,15 @@ Each store has its own data and configuration. Core checkout and management work
 
 Existing users: close the old app and replace its executable in the existing app folder, keeping the `saves` folder and other store files. Install this updater-enabled version once manually; later releases can be installed from the app's update prompt.
 
-## New in 1.0.8
+## New in 1.0.9
+
+- Promo Summary and Promo Transactions sheets in every Excel export track actual usage and discounts separately from manual or unattributed legacy discounts. Daily Report also identifies promos on transaction rows.
+
+- New Promos tab: save seasonal, coupon, loyalty and other offers; choose which print automatically, synchronized with Receipt Extras. Search and select saved promos in the register, including dollar or percentage discounts, with a preview and OK/Cancel. Promos are included in store backups.
+
+- Fixes clipped Products and Inventory tables: the table viewport fills available space and exposes all columns, with horizontal scrolling on smaller screens.
+
+## Added in 1.0.8
 
 - Inventory transfer files preserve category defaults, individual tax exceptions and remaining item setup requirements for a new store.
 
