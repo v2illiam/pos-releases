@@ -115,7 +115,7 @@ To move a store, save its complete ZIP backup and choose **Restore backup** in t
 - Searchable, paginated preview of new items, duplicate barcodes and held rows, with stock, price, cost and review reasons.
 - Leading zeroes remain intact. Existing barcodes/SKUs are skipped, and repeating an import does not add stock twice.
 - Complete backup before import; product records and opening stock movements save together. The original source file is preserved.
-- Default inactive import for inspection; optional activation after reviewing tax rates. Uncertain matches and unsupported special pricing are held for review.
+- Import now and finish missing tax, cost or price on the first scan or register selection. Save once and future scans reuse those details; cancelling leaves the item out of the sale. Earlier inactive imports from 1.0.2 are enabled for this setup automatically. Uncertain barcode matches and unsupported special pricing are still held for review.
 - Inventory transfers do not include sales, drawer sessions, email settings, vendor links or images. Use complete backups to move a full store.
 
 ### Interface and settings
