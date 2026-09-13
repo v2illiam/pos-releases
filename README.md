@@ -56,6 +56,7 @@ Printer compatibility depends on the device and its Windows configuration.
 - Add, edit, delete, search, and filter products; manage categories and their default tax rates.
 - Stock tracking, scan-to-update workflows, stock adjustments, and low-stock/reorder indicators.
 - Product detail views and clickable stock alerts.
+- Products and Inventory use 50-row pages for large catalogs. Search, filters and totals cover all matching items. Inventory imports run in the background with progress feedback.
 
 ### Vendors and purchase orders
 
@@ -135,3 +136,10 @@ To move a store, save its complete ZIP backup and choose **Restore backup** in t
 - Keeps the previous executable and database backup in `.pos-updates`, with recovery if the new app fails its startup check.
 
 An older app without the updater needs one manual installation of the updater-enabled release. Automatic updates do not upload store data to GitHub.
+
+### Large-store performance
+
+- Paged inventory, accounting lists, purchase orders, sales history, report previews and cash-drawer history keep large collections accessible without drawing every row at once.
+- Search and totals cover the complete matching dataset. Older sales and stock movements remain available through page controls.
+- Background inventory import, Excel export and scheduled/manual complete backups keep the window responsive during those operations.
+- Indexed database lookups and limited register suggestion results reduce unnecessary work.
