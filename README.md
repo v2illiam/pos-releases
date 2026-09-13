@@ -17,6 +17,13 @@ Each store has its own data and configuration. Core checkout and management work
 
 Existing users: close the old app and replace its executable in the existing app folder, keeping the `saves` folder and other store files. Install this updater-enabled version once manually; later releases can be installed from the app's update prompt.
 
+## New in 1.0.6
+
+- Shared tax categories: change one category to update all linked products. Select categories during product editing or first-scan setup.
+- Reviewed tax-only import files, complete pre-change backups, separate receipt tax components, and sale-time tax detail in Full Data Export.
+- Six-item autocomplete dropdowns in Products and Inventory for names and barcodes.
+- Inventory > Stock Status, with In Stock, Out of Stock, and All filters.
+
 ## Features
 
 ### Register and checkout
