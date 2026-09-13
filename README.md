@@ -17,7 +17,16 @@ Each store has its own data and configuration. Core checkout and management work
 
 Existing users: close the old app and replace its executable in the existing app folder, keeping the `saves` folder and other store files. Install this updater-enabled version once manually; later releases can be installed from the app's update prompt.
 
-## New in 1.0.7
+## New in 1.0.8
+
+- Inventory transfer files preserve category defaults, individual tax exceptions and remaining item setup requirements for a new store.
+
+- Products and Inventory wrap longer values into taller rows while keeping columns aligned.
+
+- Daily Report shows only nonzero stock movements for the selected day, with product names and barcodes.
+- Zero-stock inventory imports no longer produce misleading movement entries. Existing stock quantities and transaction history are preserved.
+
+## Added in 1.0.7
 
 - Clear report filenames include the report name and exact date, date range, or snapshot date in day-month-year order, such as 13 SEP 2026. Repeated exports receive a number to preserve earlier files. Purchase Order History honors the selected period.
 - Daily Report in Reports: one-click Export Today's Report and a selector for past dates. One styled workbook includes transactions, all saved receipt items, cash/card/EBT and other split payments, cash change, taxes, margins, drawer sessions and payouts, purchases, income, expenses, and stock activity. Open drawers are provisional; historic tax snapshots are preserved.
