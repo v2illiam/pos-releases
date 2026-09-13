@@ -143,3 +143,7 @@ An older app without the updater needs one manual installation of the updater-en
 - Search and totals cover the complete matching dataset. Older sales and stock movements remain available through page controls.
 - Background inventory import, Excel export and scheduled/manual complete backups keep the window responsive during those operations.
 - Indexed database lookups and limited register suggestion results reduce unnecessary work.
+
+- Cash Drawer includes a calendar/date selector, saved session dates and the currently open drawer session.
+- Inventory sub-tabs load on demand, and standard tables use 25-row pages with theme-matched navigation controls.
+- The two most recent data screens can be reused for faster navigation, with automatic refresh after store data changes.
