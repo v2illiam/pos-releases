@@ -17,12 +17,16 @@ Each store has its own data and configuration. Core checkout and management work
 
 Existing users: close the old app and replace its executable in the existing app folder, keeping the `saves` folder and other store files. Install this updater-enabled version once manually; later releases can be installed from the app's update prompt.
 
-## New in 1.0.6
+## New in 1.0.7
 
-- Shared tax categories: change one category to update all linked products. Select categories during product editing or first-scan setup.
-- Reviewed tax-only import files, complete pre-change backups, separate receipt tax components, and sale-time tax detail in Full Data Export.
-- Six-item autocomplete dropdowns in Products and Inventory for names and barcodes.
-- Inventory > Stock Status, with In Stock, Out of Stock, and All filters.
+- Clear report filenames include the report name and exact date, date range, or snapshot date in day-month-year order, such as 13 SEP 2026. Repeated exports receive a number to preserve earlier files. Purchase Order History honors the selected period.
+- Daily Report in Reports: one-click Export Today's Report and a selector for past dates. One styled workbook includes transactions, all saved receipt items, cash/card/EBT and other split payments, cash change, taxes, margins, drawer sessions and payouts, purchases, income, expenses, and stock activity. Open drawers are provisional; historic tax snapshots are preserved.
+- Register Quick Add uses the shared tax categories, with fewer readable buttons and the same tax rates and receipt breakdowns.
+- Unified product categories and inherited tax rates; edit one category to update every assigned product.
+- Reviewed category consolidation with complete backups and protection for existing manual taxes and past receipts.
+- Double-click editing in Products and Inventory, including Stock Status.
+- Smoother search suggestions with bold names and smaller barcode, stock, and price details.
+- Out-of-stock products show $0 inventory value across the app and Excel exports; negative quantities remain visible.
 
 ## Features
 
