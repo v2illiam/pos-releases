@@ -17,7 +17,14 @@ Each store has its own data and configuration. Core checkout and management work
 
 Existing users: close the old app and replace its executable in the existing app folder, keeping the `saves` folder and other store files. Install this updater-enabled version once manually; later releases can be installed from the app's update prompt.
 
-## New in 1.0.11
+## New in 1.0.12
+
+- Customers > Email promotions sends individually addressed emails through the saved store SMTP account. Insert a saved promo, edit the subject/introduction/message/store details, save defaults, and review the recipients before sending.
+- Clean branded email layout, uploaded store logo embedded in the email, styled browser preview and a plain-text fallback.
+- Popups automatically grow to show their form content and preserve visible action buttons, with scrolling only for content beyond the available monitor space.
+- Customer email opt-outs, background sending with a Stop button, and persistent send history with exact message snapshots. No automatic resending of interrupted messages.
+
+## Added in 1.0.11
 
 - Register search and barcode scanning support active products with zero or negative recorded stock, with the same six-result dropdown and normal checkout.
 
