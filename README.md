@@ -17,7 +17,11 @@ Each store has its own data and configuration. Core checkout and management work
 
 Existing users: close the old app and replace its executable in the existing app folder, keeping the `saves` folder and other store files. Install this updater-enabled version once manually; later releases can be installed from the app's update prompt.
 
-## New in 1.0.10
+## New in 1.0.11
+
+- Register search and barcode scanning support active products with zero or negative recorded stock, with the same six-result dropdown and normal checkout.
+
+## Added in 1.0.10
 
 - Customers and configurable loyalty points: phone/email register lookup, earning and reward thresholds, dollar/percentage rewards and optional promo stacking.
 - Rewards use existing points before payment; points are earned or spent only when checkout succeeds. Customer profiles, receipts and Excel exports track spending, points and savings. Customer data is included in store backups and updates.
